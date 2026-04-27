@@ -1,0 +1,21 @@
+pkgbase = globalprotect
+	pkgdesc = GlobalProtect VPN client Agent (Palo Alto Networks)
+	pkgver = 6.3.3.1
+	pkgrel = 619
+	url = https://docs.paloaltonetworks.com/globalprotect/6-3/globalprotect-app-user-guide/globalprotect-app-for-linux
+	install = globalprotect.install
+	arch = x86_64
+	license = custom
+	makedepends = libarchive
+	depends = qt5-webkit
+	depends = wmctrl
+	provides = globalprotect-bin
+	conflicts = globalprotect-bin
+	noextract = PanGPLinux-6.3.3-c22.tgz
+	options = !strip
+	options = !debug
+	options = staticlibs
+	source = https://isssweb.umkc.edu/files/PanGPLinux-6.3.3-c22.tgz
+	sha256sums = e23ab15b813aaae577f19bfd61ef524b39d4bd5f55dd56c7db3076044978f04e
+
+pkgname = globalprotect

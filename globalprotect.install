@@ -1,0 +1,42 @@
+post_install() {
+  cat <<'EOF'
+
+==> GlobalProtect installed successfully.
+==> Next steps:
+
+    1) Enable and start the system daemon:
+         sudo systemctl enable --now gpd
+
+    2) LOG OUT AND BACK IN to your desktop so the user agent PanGPA
+       starts automatically (via /etc/xdg/autostart/PanGPA.desktop).
+       Without it, both UI and CLI fail with
+       "Cannot connect to local gpd service".
+
+       Skip the re-login (starts PanGPA only in the current session):
+         /opt/paloaltonetworks/globalprotect/PanGPA start &
+
+    3) Launch the GUI:
+         globalprotect launch-ui
+         # or, as a last resort, call it directly:
+         PanGPUI &
+
+    4) Terminal-only alternative (no GUI):
+         globalprotect connect --portal <portal-address>
+
+==> If the connection fails, check the daemon status:
+         sudo systemctl status gpd
+EOF
+}
+
+post_upgrade() {
+  post_install
+}
+
+post_remove() {
+  cat <<'EOF'
+
+==> GlobalProtect removed.
+==> If the VPN was connected, restore system DNS with:
+         sudo systemctl restart systemd-resolved
+EOF
+}

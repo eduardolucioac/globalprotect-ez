@@ -1,0 +1,9 @@
+*.pkg.tar.zst
+*.pkg.tar.xz
+*.tar.gz
+*.tgz
+*.rpm
+*.deb
+
+pkg/
+src/
