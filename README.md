@@ -7,6 +7,32 @@ Arch Linux package for the Palo Alto Networks **GlobalProtect** VPN client
 archive. Works on Arch Linux and any Arch-based distro (Manjaro,
 EndeavourOS, CachyOS, etc.).
 
+**IMPORTANT:** My life, my work and my passion is free software. Corrections, tweaks and improvements are very welcome (**pull requests** 😉)! Please consider giving us a ⭐, fork, support this project or even visit our professional profile (see [About](##about)). **Thanks!** 🤗
+
+**Support free software and my work!** ❤️🐧
+
+## Table of Contents
+
+- [Layout](#layout)
+- [Installation](#installation)
+   * [1. Prerequisites](#1-prerequisites)
+   * [2. Grab this project](#2-grab-this-project)
+   * [3. Build and install the package](#3-build-and-install-the-package)
+   * [4. Start the services](#4-start-the-services)
+   * [5. Open the interface](#5-open-the-interface)
+- [Useful commands](#useful-commands)
+- [Optional configuration](#optional-configuration)
+   * [Corporate proxy](#corporate-proxy)
+   * [Client certificate (mTLS)](#client-certificate-mtls)
+- [Harmless log messages](#harmless-log-messages)
+   * [Info: missing `gp_excluded_users.txt`](#info-missing-gp_excluded_userstxt)
+- [Upgrading an existing install](#upgrading-an-existing-install)
+   * [Reinstalling the same version](#reinstalling-the-same-version)
+- [Download failure](#download-failure)
+- [Uninstall](#uninstall)
+- [Upgrading to a newer upstream version](#upgrading-to-a-newer-upstream-version)
+- [About](#about)
+
 ## Layout
 
 ```
