@@ -7,7 +7,7 @@ Arch Linux package for the Palo Alto Networks **GlobalProtect** VPN client
 archive. Works on Arch Linux and any Arch-based distro (Manjaro,
 EndeavourOS, CachyOS, etc.).
 
-**IMPORTANT:** My life, my work and my passion is free software. Corrections, tweaks and improvements are very welcome (**pull requests** 😉)! Please consider giving us a ⭐, fork, support this project or even visit our professional profile (see [About](##about)). **Thanks!** 🤗
+**IMPORTANT:** My life, my work and my passion is free software. Corrections, tweaks and improvements are very welcome (**pull requests** 😉)! Please consider giving us a ⭐, fork, support this project or even visit our professional profile (see [About](#about)). **Thanks!** 🤗
 
 **Support free software and my work!** ❤️🐧
 
